@@ -16,3 +16,15 @@ const result = map(input, (n: number): number => {
 });
 
 console.log(result);
+
+interface Pet {
+  name: String;
+}
+
+const pet1 = {
+  name: "Trevor",
+};
+
+function usePet(pet: Pet): void {
+  return console.log("PetName: " + pet.name);
+}
