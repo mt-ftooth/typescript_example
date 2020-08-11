@@ -18,12 +18,10 @@ const result = map(input, (n: number): number => {
 console.log(result);
 
 interface Pet {
-  name: String;
+  name?: String;
 }
 
-const pet1 = {
-  name: "Trevor",
-};
+const pet1: Pet = {};
 
 function usePet(pet: Pet): void {
   return console.log("PetName: " + pet.name);
